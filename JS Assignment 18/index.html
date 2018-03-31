@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="intializer" class="container-fluid">
+        <img src="images/quiz.png" class="img-fluid" alt="Responsive image">
+        <button type="button" class="start-btn btn btn-lg" onclick="intializer()">Start</button>
+    </div>
+
+
+    <div id="questions">
+        <h4 class="ques" id="question"></h4>
+        <form id="options">
+            <input type="radio" name="option" id="option-1" onclick="toSelect()"><label for="option-1"></label>
+            <input type="radio" name="option" id="option-2" onclick="toSelect()"><label for="option-2"></label><br>
+            <input type="radio" name="option" id="option-3" onclick="toSelect()"><label for="option-3"></label>
+            <input type="radio" name="option" id="option-4" onclick="toSelect()"><label for="option-4"></label>
+        </form>
+        <button type="button" class="next-btn btn btn-lg" id="next-btn" onclick="next()" disabled >Next</button>
+    </div>
+
+    <div id="result">
+        <h1 id="result-status"></h1>
+        <h5 id="score"></h5>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
